@@ -1,0 +1,125 @@
+:root {
+    --bg-light: #ffffff;
+    --text-light: #333333;
+    --accent-light: #0366d6;
+    --border-light: #e1e4e8;
+    
+    --bg-dark: #121212;
+    --text-dark: #f0f0f0;
+    --accent-dark: #58a6ff;
+    --border-dark: #333333;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: var(--bg-light);
+    color: var(--text-light);
+    transition: background 0.3s, color 0.3s;
+}
+
+body.dark-theme {
+    background-color: var(--bg-dark);
+    color: var(--text-dark);
+}
+
+/* Header */
+header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 1.5rem;
+    color: #666;
+    margin-top: 0;
+}
+
+.contacts a {
+    margin: 0 0.5rem;
+    color: var(--accent-light);
+    text-decoration: none;
+}
+
+.dark-theme .contacts a {
+    color: var(--accent-dark);
+}
+
+/* Sections */
+section {
+    margin-bottom: 2rem;
+}
+
+h3 {
+    border-bottom: 2px solid var(--border-light);
+    padding-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.dark-theme h3 {
+    border-color: var(--border-dark);
+}
+
+.job {
+    margin-bottom: 1.5rem;
+}
+
+.job h4 {
+    margin-bottom: 0.3rem;
+}
+
+ul {
+    padding-left: 1.2rem;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-category h4 {
+    margin-bottom: 0.5rem;
+    color: var(--accent-light);
+}
+
+.dark-theme .skill-category h4 {
+    color: var(--accent-dark);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border-light);
+}
+
+.dark-theme footer {
+    border-color: var(--border-dark);
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    cursor: pointer;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.dark-theme #theme-toggle {
+    color: var(--text-dark);
+}
