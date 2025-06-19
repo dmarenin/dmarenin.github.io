@@ -1,1 +1,103 @@
-about me
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dmitry Marenin - CTO & Engineering Leader</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Dmitry Marenin</h1>
+        <h2>Chief Technology Officer</h2>
+        <p>
+            <a href="mailto:i@dmarenin.ru">i@dmarenin.ru</a> | 
+            <a href="https://github.com/dmarenin" target="_blank">GitHub</a>
+        </p>	
+    </header>
+    <main>
+        <section>
+            <h3><i class="fas fa-user"></i> About</h3>
+            <p>
+                Experienced CTO with 12+ years in software development, architecture, and team leadership. 
+            </p>
+            <p>
+				Business development software.
+            </p>			
+            <p>
+				Business development software.
+                Strong background in cloud computing, DevOps, and scalable systems. 
+                Passionate about building high-performing engineering teams and innovative products.
+            </p>
+            <p>
+				Speaker at Infostart Event Infostart 2019.			
+            </p>			
+        </section>
+        <section>
+            <h3><i class="fas fa-briefcase"></i> Experience</h3>
+            <div class="job">
+                <h4>CTO | MallTeam-Tech (2025–Present)  |  property management: street rent, commercial</h4>
+	
+
+
+            </div>
+            <div class="job">
+                <h4>Lead Developer | YK City Mall (2022–2024)  |  property management: malls</h4>			
+
+				
+            </div>
+	            <div class="job">
+                <h4>Lead Developer | Agrad (2016–2022)  |  auto business: sale, service, spare parts</h4>				
+
+
+            </div>		
+        </section>
+        <section>
+            <h3><i class="fas fa-code"></i> Skills</h3>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h4>Technical</h4>
+                    <ul>
+                        <li>Cloud: YandexCloud, mCloud</li>
+                        <li>Backend: Python, 1C</li>
+                        <li>Frontend: JavaScript</li>
+                        <li>DevOps: Docker, CI/CD, Linux</li>
+                        <li>DB: MS SQL, Postgres, MariaDB</li>
+                    </ul>
+                </div>
+                <div class="skill-category">
+                    <h4>Leadership</h4>
+                    <ul>
+                        <li>Hiring & Mentoring</li>
+                        <li>Tech Roadmaps</li>
+                        <li>Tech Strategy</li>
+                    </ul>
+                </div>
+				
+            </div>
+        </section>
+    </main>
+    <footer>
+        
+        <p>© 2025 Dmitry Marenin | Hosted on <a href="https://https://github.com/dmarenin/dmarenin.github.io">GitHub Pages</a> | <button id="theme-toggle"><i class="fas fa-moon"></i> </button></p>
+    </footer>
+    <script>
+        const toggle = document.getElementById('theme-toggle');
+        toggle.addEventListener('click', () => {
+            document.body.classList.toggle('dark-theme');
+            const icon = toggle.querySelector('i');
+            icon.classList.toggle('fa-moon');
+            icon.classList.toggle('fa-sun');
+        });
+
+        // Check system preference
+        if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.body.classList.add('dark-theme');
+            const icon = document.querySelector('#theme-toggle i');
+            icon.classList.replace('fa-moon', 'fa-sun');
+        }
+    </script>
+</body>
+</html>
